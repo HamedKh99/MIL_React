@@ -7,7 +7,7 @@ class TodosList extends React.Component {
         {this.props.todos.map((todo) => {
           return (
             <li
-              style={{ cursor: "pointer", textDecoration: (todo.done ? 'line-through' : 'none') }}
+              style={{ cursor: "pointer"}}
               onClick={(event) => this.props.toggleDoneTodo(todo.id)}
             >
               {todo.text}
